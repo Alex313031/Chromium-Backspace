@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title i18n="optionsTitle">TITLE</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <link rel="stylesheet" type="text/css" href="options.css">
+</head>
+
+<body>
+
+  <img class="button-image" src="settings.png" i18n-alt="optionsIcon">
+
+  <div class="feedback-button">
+    <a href="" i18n="sendFeedback" id="feedback-link"></a>
+  </div>
+
+  <div>
+    <div class="setting">
+      <span i18n="optionsBlacklist"></span><br>
+      <textarea id="blacklist" rows="8"></textarea><br>
+    </div>
+
+    <fieldset>
+      <legend i18n="optionsAppletGroup" id="fieldset-legend"></legend>
+      <input type="checkbox" id="disableInApplets" class="setting">
+      <label i18n="optionsAppletCheckbox" for="disableInApplets"></label>
+      <div class="sub-setting">
+        <span i18n="optionsWhitelist" class="toggled"></span><br>
+        <textarea class="whitelist" id="whitelist" rows="6" class="toggled"></textarea>
+      </div>
+    </fieldset>
+  </div>
+
+  <div id="error">&nbsp;</div>
+
+  <div i18n="optionsListDetails"></div>
+  <div class="buttons">
+    <button i18n="optionsSave" id="done-button"></button>
+    <button i18n="optionsCancel" id="cancel-button"></button>
+  </div>
+
+  <script src="common.js"></script>
+  <script src="options.js"></script>
+</body>
+</html>

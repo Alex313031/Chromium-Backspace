@@ -1,0 +1,94 @@
+/**
+ * Copyright 2023 Google Inc. and Alex313031. All rights reserved.
+ * Use of this source code is governed by a BSD-style license that can be
+ * found in the LICENSE file.
+ */
+
+body {
+  direction: __MSG_@@bidi_dir__;
+  margin: 0;
+  text-align: center;
+  width: 270px;
+}
+
+h1 {
+  -webkit-margin-start: 8px;
+  font-size: 17px;
+  margin-top: 4px;
+  text-align: left;
+}
+
+#title {
+  text-align: center;
+}
+
+.bottom-bar {
+  align-items: center;
+  background-color: rgb(241, 241, 241);
+  border-top: 1px solid rgb(204, 204, 204);
+  height: 33px;
+  margin-top: 2px;
+  padding: 0 5px;
+}
+
+.bottom-bar > span {
+  padding-top: 5px;
+}
+
+.button-image {
+  background-position: left;
+  background-repeat: no-repeat;
+  background-size: 20px 20px;
+  cursor: pointer;
+  height: 24px;
+  opacity: .60;
+  outline: none;
+  width: 24px;
+}
+
+#list-edit-button {
+  background-image: -webkit-linear-gradient(top,
+                                            rgb(77, 144, 254),
+                                            rgb(71, 135, 237));
+  border: 1px solid rgb(48, 121, 237);
+  border-radius: 2px;
+  color: white;
+  display: inline-block;
+  font-size: 13px;
+  height: 30px;
+  line-height: 30px;
+  margin-bottom: 10px;
+  padding: 0 8px;
+}
+
+#list-edit-button:hover:enabled {
+  background-image: -webkit-linear-gradient(top,
+                                            rgb(77, 144, 254)
+                                            rgb(53, 122, 232));
+  border: 1px solid rgb(47, 91, 183);
+}
+
+#list-edit-button:disabled {
+  opacity: 0.50;
+}
+
+#file-url-message {
+  margin-bottom: 5px;
+}
+
+#status {
+  color: green;
+  line-height: 33px;
+}
+
+#status.error {
+  color: red;
+}
+
+#feedback-button {
+  float: __MSG_@@bidi_start_edge__;
+}
+
+#options-button {
+  float: __MSG_@@bidi_end_edge__;
+}
