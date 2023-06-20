@@ -62,7 +62,7 @@
     "description": "Status message shown in the popup when the current page is one of the special pages on which extensions are prohibited."
   },
   "popupFileURL": {
-    "message": "Allow this extension access to file URLs",
+    "message": "Allow extension access to file URLs",
     "description": "Text of a link shown in the popup when the current page is a file:// URL, whether or not the extension currently has access to file:// URLs. The link leads to chrome://extensions."
   },
   "popupAddBlacklist": {

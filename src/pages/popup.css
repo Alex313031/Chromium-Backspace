@@ -4,18 +4,29 @@
  * found in the LICENSE file.
  */
 
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Roboto", sans-serif;
+}
+
 body {
   direction: __MSG_@@bidi_dir__;
   margin: 0;
   text-align: center;
   width: 270px;
+  background-color: rgb(238, 238, 238);
+  font-family: "Roboto", sans-serif;
 }
 
 h1 {
   -webkit-margin-start: 8px;
-  font-size: 17px;
-  margin-top: 4px;
+  font-size: 18px;
+  margin-top: 5px;
   text-align: left;
+  color: #202020;
 }
 
 #title {
@@ -24,11 +35,12 @@ h1 {
 
 .bottom-bar {
   align-items: center;
-  background-color: rgb(241, 241, 241);
-  border-top: 1px solid rgb(204, 204, 204);
-  height: 33px;
-  margin-top: 2px;
-  padding: 0 5px;
+  background-color: rgb(238, 238, 238);
+  border-top: 1px solid rgb(192, 192, 192);
+  height: 34px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  padding: 3px 5px;
 }
 
 .bottom-bar > span {
@@ -40,10 +52,10 @@ h1 {
   background-repeat: no-repeat;
   background-size: 20px 20px;
   cursor: pointer;
+  width: 24px;
   height: 24px;
   opacity: .60;
   outline: none;
-  width: 24px;
 }
 
 #list-edit-button {
@@ -78,7 +90,8 @@ h1 {
 
 #status {
   color: green;
-  line-height: 33px;
+  line-height: 32px;
+  font-style: italic;
 }
 
 #status.error {
