@@ -5,7 +5,7 @@ Chromium/Chrome extension which re-enables the backspace key as a back navigatio
  &ndash; It is a fork of https://chrome.google.com/webstore/detail/go-back-with-backspace/eekailopagacbcdloonjhbiecobagjci
 
 > 3.0.2
-> - Updated some css and manifest.json homepage_url
+> - Updated some css, strings, and manifest.json homepage_url
 > - Updated icon sizes and readme.txt
 > 
 > 3.0.1
