@@ -1,4 +1,5 @@
 #!/bin/bash
+
 # Zip the files needed for this extension, excluding screenshots, promotional
 # images, and backup files.
 
@@ -8,6 +9,8 @@ readonly ZIP_FILE='go-back-with-backspace.zip'
 # raised if one is missing.
 declare -ar ZIP_CONTENTS=(LICENSE
                           _locales/
+                          _locales/en/
+                          _locales/en/messages.json
                           background.js
                           content_script.js
                           icons/
@@ -15,8 +18,12 @@ declare -ar ZIP_CONTENTS=(LICENSE
                           icons/icon19.png
                           icons/icon32.png
                           icons/icon38.png
-                          icons/icon48.png
-                          icons/icon128.png
+                          icons/icon_16.png
+                          icons/icon_24.png
+                          icons/icon_32.png
+                          icons/icon_48.png
+                          icons/icon_64.png
+                          icons/icon_128.png
                           is_editable.js
                           manifest.json
                           pages/
@@ -29,20 +36,20 @@ declare -ar ZIP_CONTENTS=(LICENSE
                           pages/popup.html
                           pages/popup.js
                           pages/settings.png
-                          readme.txt)
+                          README.txt)
 
 # Remove backup files.
 rm -f $(find . -name \*~ -or -name \#\*\#)
 
-if ! mkdir -p icons; then
-  echo "Error creating icons/ directory" >&2
-  exit 1
-fi
+# if ! mkdir -p icons; then
+#  echo "Error creating icons/ directory" >&2
+#  exit 1
+# fi
 
-if ! cp assets/icon*.png icons/; then
-  echo "No icon images found in icons/" >&2
-  exit 2
-fi
+# if ! cp assets/icon*.png icons/; then
+#  echo "No icon images found in icons/" >&2
+#  exit 2
+# fi
 
 rm -f "${ZIP_FILE}"
 if ! zip -r --quiet --must-match "${ZIP_FILE}" "${ZIP_CONTENTS[@]}"; then
